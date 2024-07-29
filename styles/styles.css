@@ -11,9 +11,9 @@ body{
 }
 
 
-/*///////// head //////////*/
+/*/////////////////// head ////////////////////*/
 
-/* navigation */
+/*///// navigation /////*/
 .navigation{
     display: flex;
     flex-direction: row;
@@ -48,11 +48,12 @@ body{
     padding: 17px 24px;
 }
 
-/* banner-section */
+/*///// banner-section /////*/
 .banner-section{
     background-image: url(../assets/Hero-bg.png);
     background-repeat: no-repeat;
-    max-width: 1535px;
+    /* max-width: 1535px; */
+    width: 100%;
     background-size: cover;
     height: 650px;
     
@@ -70,7 +71,7 @@ body{
     align-items: center;   
 }
 
-.img-text-part h1{
+.img-text-part h1{ 
 color: rgb(13, 19, 33);
 font-size: 48px;
 font-weight: 800;
@@ -81,7 +82,7 @@ margin-bottom: 24px;
 margin-top: 52px;
 }
 
-.img-text-part p , .web-dev-heading p ,.text-part-of-why-web-dev-contents p{   /*multiple*/
+.img-text-part p , .web-dev-heading p ,.text-part-of-why-web-dev-contents p, .inspiration-section p, .current-target-section p ,#dev-tool p{   /*-----multiple-----*/
     color: rgb(13, 19, 33);
     font-size: 16px;
     font-weight: 400;
@@ -106,9 +107,9 @@ margin-top: 52px;
 
 
 
-/*///////// body //////////*/
+/*/////////////////// body ////////////////////*/
 
-/* web-dev-section */
+/*///// web-dev-section /////*/
 
 
 .web-dev-section{
@@ -122,7 +123,7 @@ margin-top: 52px;
     margin-bottom: 88px;
 }
 
-.web-dev-heading h1{
+.web-dev-heading h1, .inspiration-section h1 ,.current-target-section h1{ /*-----multiple-----*/
     color: rgb(13, 19, 33);
     font-size: 32px;
     font-weight: 800;
@@ -229,3 +230,98 @@ margin-top: 52px;
     opacity: 0.7;
     
 }
+
+
+/*///// inspiration-section /////*/
+.inspiration-section{
+    width: 85%;
+    margin: 0 auto;
+}
+.video-link iframe{
+    width: 1276px;
+    height: 650px;
+    border-radius: 16px;
+    padding: 32px;
+    border: 1px solid rgba(13, 19, 33, 0.2);
+    border-radius: 16px;
+}
+
+.video-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 150px;
+}
+
+.inspiration-section h1 , .current-target-section h1{ /*-----multiple-----*/
+    margin-bottom: 24px;
+}
+.inspiration-section p , .current-target-section p{ /*-----multiple-----*/
+    margin-bottom: 48px;
+}
+
+
+
+/*///// current-target-section /////*/
+.current-target-section{
+    width: 85%;
+    margin: 0 auto;
+}
+.all-dev-tools{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    margin-bottom: 111px;
+}
+
+
+#dev-tool h1{
+color: rgb(13, 19, 33);
+font-size: 24px;
+font-weight: 800;
+line-height: 36px;
+letter-spacing: 0%;
+text-align: left;
+}
+
+#dev-tool a{
+    color: rgb(13, 19, 33);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0%;
+    text-align: left;
+    text-decoration-line: underline;
+}
+.html-part{
+    border-radius: 16px;
+    background: rgba(255, 76, 30, 0.05);
+
+}
+.css-part{
+    border-radius: 16px;
+    background: rgba(0, 76, 232, 0.05);
+}
+.javascript-part{
+    border-radius: 16px;
+    background: rgba(255, 223, 0, 0.05);
+}
+
+#dev-tool{
+    width: 350px;
+    height: 300px;
+    padding: 40px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+#dev-tool p{
+    text-align: left;
+}
+
