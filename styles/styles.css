@@ -105,6 +105,10 @@ margin-top: 52px;
     text-align: center;
 }
 
+.button-container a{
+    text-decoration: none;
+    color: white;
+}
 
 
 /*/////////////////// body ////////////////////*/
