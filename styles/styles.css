@@ -103,8 +103,18 @@ margin-top: 52px;
     line-height: 23px;
     letter-spacing: 0%;
     text-align: center;
-}
+    border: none;
 
+    cursor: pointer;
+}
+.button-container button:focus{
+    color: lightyellow;
+    border: 2px solid white;
+    box-shadow: 0px 0px 0px 1px rosybrown;
+}
+.button-container button:hover{
+    background-color: rgb(114, 113, 113);
+}
 .button-container a{
     text-decoration: none;
     color: white;
@@ -233,6 +243,14 @@ margin-top: 52px;
     border: 1px solid rgb(13, 19, 33);
     opacity: 0.7;
     
+}
+.learn-more-button-container button:focus{
+    color: rgb(50, 20, 172);
+    border: 2px solid white;
+    box-shadow: 0px 0px 0px 1px rgb(89, 89, 154);
+}
+.learn-more-button-container button:hover{
+    background-color: rgb(202, 199, 199);
 }
 
 
